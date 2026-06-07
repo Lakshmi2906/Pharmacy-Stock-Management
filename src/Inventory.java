@@ -83,4 +83,54 @@ public class Inventory {
             System.out.println(e);
         }
     }
+    public void deleteMedicine(int id) {
+        try {
+            Connection con = DBConnection.getConnection();
+
+            String sql = "DELETE FROM medicine WHERE id=?";
+
+            PreparedStatement ps = con.prepareStatement(sql);
+
+            ps.setInt(1, id);
+
+            int rows = ps.executeUpdate();
+
+            if(rows > 0)
+                System.out.println("Medicine Deleted Successfully");
+            else
+                System.out.println("Medicine Not Found");
+
+        } catch(Exception e) {
+            System.out.println(e);
+        }
+    }
+    public void searchMedicine(int id) {
+        try {
+            Connection con = DBConnection.getConnection();
+
+            String sql = "SELECT * FROM medicine WHERE id=?";
+
+            PreparedStatement ps = con.prepareStatement(sql);
+
+            ps.setInt(1, id);
+
+            ResultSet rs = ps.executeQuery();
+
+            if(rs.next()) {
+                System.out.println(
+                    "Medicine[ID = "+rs.getInt("id")+
+                    ", Name = "+rs.getString("name")+
+                    ", Qty = "+rs.getInt("quantity")+
+                    ", Price = "+rs.getDouble("price")+
+                    ", Expiry = "+rs.getString("expiry")+"]"
+                );
+            }
+            else {
+                System.out.println("Medicine Not Found");
+            }
+
+        } catch(Exception e) {
+            System.out.println(e);
+        }
+    }
 }

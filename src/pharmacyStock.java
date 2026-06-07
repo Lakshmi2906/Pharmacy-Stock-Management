@@ -9,6 +9,8 @@ public class pharmacyStock {
 			System.out.println("1.Add Medicine");
 			System.out.println("2.Update Stock");
 			System.out.println("3.Medicine List");
+			System.out.println("4.Delete Medicine");
+			System.out.println("5.Search Medicine");
 			System.out.println("0.Exit");
 			System.out.print("Enter Your Choice: ");
 			choice=sc.nextInt();
@@ -36,13 +38,17 @@ public class pharmacyStock {
 				case 3:
 					inv.showAll();
 					break;
-//				case 4:
-//					System.out.println("Enter id to Delete: ");
-//					int delid=sc.nextInt();
-//					System.out.println("Enter Quantity to Delete: ");
-//					int delqty=sc.nextInt();
-//					inv.delete(delid,delqty);
-//					break;
+				case 4:
+				    System.out.print("Enter Medicine ID to Delete: ");
+				    int delid = sc.nextInt();
+				    inv.deleteMedicine(delid);
+				    break;
+				case 5:
+				    System.out.print("Enter Medicine ID: ");
+				    int sid = sc.nextInt();
+				    inv.searchMedicine(sid);
+				    break;
+				    
 				case 0:
 					System.out.println("Good Bye!");
 					break;

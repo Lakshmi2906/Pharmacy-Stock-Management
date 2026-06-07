@@ -1,37 +1,65 @@
-# Pharmacy Stock Management System
+# 💊 Pharmacy Stock Management System
 
-## Overview
+## 📌 Overview
 
-A Java-based console application developed using JDBC and MySQL to manage pharmacy inventory. The system allows users to add medicines, update stock quantities, search medicines, delete medicines, and view available inventory records.
+A Java-based Pharmacy Stock Management System developed using JDBC and MySQL. This application helps manage medicine inventory by allowing users to add, update, search, delete, and view medicine records through a menu-driven console interface.
 
-## Features
+---
 
-* Add Medicine
-* View All Medicines
-* Update Medicine Stock
-* Search Medicine by ID
-* Delete Medicine
-* MySQL Database Integration
-* Secure SQL Operations using PreparedStatement
-* Menu-Driven Console Interface
+## ✨ Features
 
-## Technologies Used
+✅ Add New Medicine
 
-* Java
-* JDBC
-* MySQL
-* Eclipse IDE
+✅ View All Medicines
 
-## Project Structure
+✅ Update Medicine Stock
+
+✅ Search Medicine by ID
+
+✅ Delete Medicine
+
+✅ MySQL Database Integration
+
+✅ Secure Database Operations using PreparedStatement
+
+✅ Console-Based User Interface
+
+---
+
+## 🛠️ Tech Stack
+
+* ☕ Java
+* 🗄️ MySQL
+* 🔗 JDBC
+* 💻 Eclipse IDE
+
+---
+
+## 📂 Project Structure
 
 ```text
-Medicine.java
-Inventory.java
-DBConnection.java
-pharmacyStock.java
+PharmacyStockManagement/
+│
+├── Medicine.java
+├── Inventory.java
+├── DBConnection.java
+└── pharmacyStock.java
 ```
 
-## Database Table
+---
+
+## 📊 CRUD Operations
+
+| Operation  | Status |
+| ---------- | ------ |
+| ➕ Create   | ✅      |
+| 📖 Read    | ✅      |
+| ✏️ Update  | ✅      |
+| 🗑️ Delete | ✅      |
+
+---
+
+## 🗃️ Database Schema
 
 Table: medicine
 
@@ -43,27 +71,25 @@ Table: medicine
 | price    | DOUBLE  |
 | expiry   | VARCHAR |
 
-## Concepts Demonstrated
+---
+
+## 🎯 Key Concepts Demonstrated
 
 * Object-Oriented Programming (OOP)
 * JDBC Connectivity
 * PreparedStatement
 * ResultSet Handling
 * CRUD Operations
-* Database Management
+* Database Integration
+* Exception Handling
 
-## CRUD Operations
+---
 
-| Operation | Status      |
-| --------- | ----------- |
-| Create    | Implemented |
-| Read      | Implemented |
-| Update    | Implemented |
-| Delete    | Implemented |
-
-## Sample Menu
+## 🖥️ Sample Menu
 
 ```text
+==== Welcome to Pharmacy Stock Management System ====
+
 1. Add Medicine
 2. Update Stock
 3. Medicine List
@@ -72,16 +98,22 @@ Table: medicine
 0. Exit
 ```
 
-## Future Enhancements
+---
 
-* Expiry Date Alerts
-* Low Stock Notifications
-* Hibernate Integration
-* Spring Boot REST API
-* Web-Based User Interface
-* Report Generation
+## 🚀 Future Enhancements
 
-## Author
+* ⏰ Expiry Date Alerts
+* 📉 Low Stock Notifications
+* 🔍 Search by Medicine Name
+* 📈 Inventory Reports
+* 🏗️ Hibernate Integration
+* 🌐 Spring Boot REST API
+* 🎨 Web-Based Interface
+
+---
+
+## 👨‍💻 Author
 
 Lakshmi S
-Computer Science and Engineering Student
+
+Computer Science Student
